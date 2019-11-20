@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<FindBugsFilter>
+  <Match>
+    <Bug pattern="SPRING_CSRF_UNRESTRICTED_REQUEST_MAPPING" />
+  </Match>
+
+  <Match>
+    <Bug pattern="ENTITY_MASS_ASSIGNMENT" />
+  </Match>
+</FindBugsFilter>
