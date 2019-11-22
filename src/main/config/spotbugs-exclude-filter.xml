@@ -3,8 +3,22 @@
   <Match>
     <Bug pattern="SPRING_CSRF_UNRESTRICTED_REQUEST_MAPPING" />
   </Match>
-
   <Match>
     <Bug pattern="ENTITY_MASS_ASSIGNMENT" />
+  </Match>
+  <Match>
+    <Class name="com.ensat.benchmarks.generated.BenchmarkTests_contextLoads_jmhTest" />
+  </Match>
+  <Match>
+    <Class name="com.ensat.benchmarks.generated.BenchmarkTests_jmhType" />
+  </Match>
+  <Match>
+    <Class name="com.ensat.benchmarks.generated.BenchmarkTests_jmhType_B1" />
+  </Match>
+  <Match>
+    <Class name="com.ensat.benchmarks.generated.BenchmarkTests_jmhType_B2" />
+  </Match>
+  <Match>
+    <Class name="com.ensat.benchmarks.generated.BenchmarkTests_jmhType_B3" />
   </Match>
 </FindBugsFilter>
