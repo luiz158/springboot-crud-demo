@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  springboot-crud-demo:
+    build:
+        context: ../../
+        dockerfile: dist/docker/Dockerfile
+    volumes:
+        - ./web/target/:/opt/
+    image: springboot-crud-demo:latest
+    ports:
+      - "8080:8080"
