@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mysql-old:
+    image: mysql:5.7.27
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: springbootdb
+    ports:
+      - "3306:3306"

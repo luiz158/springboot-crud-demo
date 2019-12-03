@@ -1,11 +1,12 @@
 version: '3'
 
 services:
-
-  mysql-old:
-    image: mysql:5.7.27
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: springbootdb
+  springboot-crud-demo:
+    build:
+        context: ../../
+        dockerfile: dist/docker/Dockerfile
+    volumes:
+        - ./web/target/:/opt/
+    image: springboot-crud-demo:latest
     ports:
-      - "3306:3306"
+      - "8080:8080"
